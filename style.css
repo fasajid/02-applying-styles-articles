@@ -1,0 +1,156 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #f4f1ec;
+	color: #27313a;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	line-height: 1.6;
+}
+
+.page-header,
+main {
+	width: 90%;
+	max-width: 920px;
+	margin: 0 auto;
+}
+
+.page-header {
+	padding: 72px 0 48px;
+	border-bottom: 1px solid #d8d3cc;
+}
+
+.eyebrow,
+.article-label {
+	margin: 0 0 8px;
+	color: #a04d36;
+	font-size: 0.75rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin-top: 0;
+}
+
+h1 {
+	margin-bottom: 10px;
+	color: #1d2730;
+	font-size: 3.2rem;
+	line-height: 1.1;
+}
+
+h2 {
+	margin: 52px 0 22px;
+	color: #1d2730;
+	font-size: 1.35rem;
+}
+
+h3 {
+	margin-bottom: 12px;
+	color: #1d2730;
+	font-size: 1.55rem;
+	line-height: 1.25;
+}
+
+.featured-article {
+	padding: 34px;
+	background: #fffdf9;
+	border-left: 5px solid #c76b4d;
+	box-shadow: 0 8px 24px rgba(39, 49, 58, 0.08);
+}
+
+.metadata {
+	display: block;
+	margin: 0 0 20px;
+	padding: 0;
+	color: #68727a;
+	font-size: 0.85rem;
+	list-style: none;
+}
+
+.metadata li {
+	display: inline;
+}
+
+.metadata li:not(:last-child)::after {
+	margin: 0 9px;
+	color: #c76b4d;
+	content: "/";
+}
+
+.article p {
+	max-width: 720px;
+	margin-bottom: 22px;
+}
+
+.read-more,
+a {
+	color: #a04d36;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.read-more:hover,
+a:hover {
+	text-decoration: underline;
+}
+
+.read-more span {
+	margin-left: 5px;
+}
+
+.article-list {
+	margin-top: 24px;
+}
+
+.article-list .article {
+	margin-bottom: 18px;
+	padding: 26px 28px;
+	background: #ebe7e1;
+	border: 1px solid #ddd7cf;
+}
+
+.article-list h3 {
+	font-size: 1.3rem;
+}
+
+.more-articles {
+	margin: 58px 0 72px;
+	padding-top: 28px;
+	border-top: 1px solid #d8d3cc;
+}
+
+.more-articles h2 {
+	margin-top: 0;
+}
+
+.more-articles ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.more-articles li {
+	margin-bottom: 9px;
+}
+
+@media (max-width: 600px) {
+	.page-header {
+		padding: 48px 0 34px;
+	}
+
+	h1 {
+		font-size: 2.4rem;
+	}
+
+	.featured-article,
+	.article-list .article {
+		padding: 24px 20px;
+	}
+}
